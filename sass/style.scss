@@ -1,0 +1,33 @@
+@import 'color.scss';
+
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    
+}
+
+p {
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--table-border);
+    padding: 7px 10px;
+}
+
+
+
