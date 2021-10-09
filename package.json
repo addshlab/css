@@ -1,9 +1,8 @@
 {
     "scripts": {
-        "watch": "chokidar 'sass/*' -c 'npm run watch:sass; npm run watch:sass-min; npm run watch:s3'",
+        "watch": "chokidar 'sass/*' -c 'npm run watch:sass; npm run watch:sass-min;'",
         "watch:sass": "node-sass sass/style.scss _.css --output-style nested",
-        "watch:sass-min": "node-sass sass/style.scss _min.css --output-style compressed",
-        "watch:s3": "aws s3 cp _min.css s3://washino-css --acl public-read"
+        "watch:sass-min": "node-sass sass/style.scss _min.css --output-style compressed"
     },
     "dependencies": {
         "chokidar-cli": "^2.1.0",
